@@ -22,7 +22,7 @@ Local MCP Server (127.0.0.1:60606/mcp)
 
 ### One-Click Deploy
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/linkly-ai/linkly-ai-mcp-remote-worker)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/LinklyAI/linkly-ai-mcp-remote-worker)
 
 ### Manual Deploy
 
