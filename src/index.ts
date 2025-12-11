@@ -43,7 +43,13 @@ export default {
 			// Forward request to Durable Object
 			const response = await stub.fetch(request);
 
-			// Add CORS headers to response
+			// WebSocket upgrade responses must be returned directly (status 101)
+			// Cannot reconstruct Response for WebSocket connections
+			if (response.webSocket) {
+				return response;
+			}
+
+			// Add CORS headers to regular HTTP responses
 			const newHeaders = new Headers(response.headers);
 			Object.entries(corsHeaders).forEach(([key, value]) => {
 				newHeaders.set(key, value);
