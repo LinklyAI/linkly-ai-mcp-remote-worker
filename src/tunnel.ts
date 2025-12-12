@@ -105,8 +105,8 @@ export class McpTunnel extends DurableObject<Env> {
 				version: '0.1.0',
 				endpoints: {
 					health: '/health',
-					tunnel: '/tunnel (WebSocket)',
-					mcp: '/mcp (POST)',
+					tunnel: '/tunnel',
+					mcp: '/mcp',
 				},
 			}),
 			{
